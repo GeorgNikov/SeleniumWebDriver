@@ -23,6 +23,8 @@ jobs:
     - name: Build the project
       run: dotnet build --no-restore
     - name: Run Project 1 UI tests
-      # env:
-      #   CHROMEWEBDRIVER: /usr/bin/google-chrome
-      run: dotnet test --verbosity normal
+      run: dotnet test TestProject1 --verbosity normal
+    - name: Run Project 2 UI tests
+      run: dotnet test TestProject2 --verbosity normal
+    - name: Run Project 3 UI tests
+      run: dotnet test TestProject3 --verbosity normal
